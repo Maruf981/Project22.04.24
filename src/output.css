@@ -626,8 +626,16 @@ video {
   color: rgb(200 241 105 / var(--tw-text-opacity, 1));
 }
 
-@media (min-width: 640px) {
+@media (max-width: 576px) {
   .sm\:hidden {
     display: none;
+  }
+
+  .sm\:gap-5 {
+    gap: 1.25rem;
+  }
+
+  .sm\:gap-2 {
+    gap: 0.5rem;
   }
 }

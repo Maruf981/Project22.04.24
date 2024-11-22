@@ -3,22 +3,17 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {screens: {
-      'sm': '640px',
-      // => @media (max-width: 640px) { ... }
+      'sm': { 'max': '576px' },
+      // => @media (max-width: 576px) { ... }
 
-      'md': '768px',
-      // => @media (max-width: 768px) { ... }
+      'md': { 'max': '960px' },
+      // => @media (max-width: 960px) { ... }
 
-      'lg': '1024px',
-      // => @media (max-width: 1024px) { ... }
-
-      'xl': '1280px',
-      // => @media (max-width: 1280px) { ... }
-
-      '2xl': '1536px',
-      // => @media (max-width: 1536px) { ... }
-    }},
+      'lg': { 'max': '1440px' },
+      // => @media (max-width: 1440px) { ... }
+    },
   },
   plugins: [],
+}
 }
 
